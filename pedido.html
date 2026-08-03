@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Cerveja - The Pirate Beer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pedido.css">
+</head>
+
+<body>
+
+<div class="pedido-container">
+
+    <a href="index.html" class="voltar">← Voltar</a>
+
+    <div class="pedido-card">
+
+        <h1 id="nomeCerveja">Carregando...</h1>
+
+        <div class="info">
+
+            <div>
+                <span>IBU</span>
+                <strong id="ibu">-</strong>
+            </div>
+
+            <div>
+                <span>ABV</span>
+                <strong id="abv">-</strong>
+            </div>
+
+            <div>
+                <span>Disponível</span>
+                <strong id="estoque">0</strong>
+            </div>
+
+        </div>
+
+
+<div class="descricao-estilo">
+    <h3>Sobre esta cerveja</h3>
+
+    <p id="descricaoCerveja"></p>
+</div>
+
+
+
+
+
+        <hr>
+
+        <label for="apelido">
+            Quem tá reservando?
+        </label>
+
+        <input
+            type="text"
+            id="apelido"
+            maxlength="40"
+            placeholder="Ex.: Dudu, Alemão, Marcelo da Oficina">
+
+        <label for="quantidade">
+            Quantas?
+        </label>
+
+        <div class="controle">
+
+            <button id="menos">−</button>
+
+            <input
+                id="quantidade"
+                type="number"
+                value="1"
+                min="1">
+
+            <button id="mais">+</button>
+
+        </div>
+
+        <div class="resumo">
+
+            <div>
+                <span>Valor unitário</span>
+                <strong id="valorUnitario">
+                    R$ 0,00
+                </strong>
+            </div>
+
+            <div>
+                <span>Total</span>
+                <strong id="valorTotal">
+                    R$ 0,00
+                </strong>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h2>PIX</h2>
+
+        <p>
+            Faça o pagamento utilizando a chave abaixo.
+        </p>
+
+        <div class="pix-box">
+
+            <input
+                id="pix"
+                type="text"
+                readonly
+                value="71649000006">
+
+            <button id="copiarPix">
+                Copiar
+            </button>
+
+        </div>
+
+        <label class="check">
+
+            <input
+                type="checkbox"
+                id="confirmado">
+
+            Já fiz o PIX.
+
+        </label>
+
+        <button
+            id="whatsapp"
+            class="btn-reservar">
+
+            Enviar reserva pelo WhatsApp
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/cervejas.js"></script>
+<script src="js/pedido.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Pirate Beer</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="overlay">
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <img src="img/tpb-logo.png" alt="TPB Logo" class="logo">
+
+            <div>
+                <h1>THE PIRATE BEER</h1>
+                <p>Brewing Without Permission Since Ever</p>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="taproom">
+
+            <h2>ON DEMAND</h2>
+
+           
+<section class="chalkboard">
+
+    <div id="beer-list"></div>
+
+</section>
+
+        </section>
+
+
+<section class="taproom">
+
+    <h2>COMING SOON</h2>
+
+    <section class="chalkboard">
+
+        <div id="incoming-list"></div>
+
+    </section>
+
+</section>
+
+
+
+
+
+    </main>
+
+    <footer>
+<!--
+        <a href="https://wa.me/5555981163122"
+   target="_blank"
+   class="crew-btn">
+            ORDER NOW
+        </a>
+-->
+        <p>
+            Mais informações sobre a cerveja no link reservar
+            <br>Reservas via PIX
+        </p>
+
+    </footer>
+
+</div>
+
+
+<script src="js/cervejas.js"></script>
+<script src="js/incoming.js"></script>
+
+<script>
+const lista = document.getElementById("beer-list");
+
+cervejas.forEach((cerveja, indice) => {
+
+let status = "";
+let classeStatus = "";
+
+if (cerveja.estoque > 10) {
+
+    status = "DISPONÍVEL";
+    classeStatus = "status-ok";
+
+}
+else if (cerveja.estoque > 0) {
+
+    status = "ACABANDO";
+    classeStatus = "status-low";
+
+}
+else {
+
+    status = "ESGOTADA";
+    classeStatus = "status-out";
+
+}
+
+lista.innerHTML += `
+<div class="beer-line">
+
+    <span class="beer-name">
+        ${cerveja.nome}
+    </span>
+
+    <span class="beer-info">
+        ${cerveja.ibu} IBU •
+        ${cerveja.abv} •
+        R$ ${cerveja.preco} •
+        ${cerveja.estoque} un.
+    </span>
+
+    <span class="${classeStatus}">
+        ${status}
+    </span>
+
+    ${
+        cerveja.estoque > 0
+        ? `<button class="reserve-btn" onclick="reservar(${indice})">
+                🍺 Reservar
+           </button>`
+        : ""
+    }
+
+</div>
+`;
+});
+
+const incomingLista = document.getElementById("incoming-list");
+
+incoming.forEach(cerveja => {
+
+incomingLista.innerHTML += `
+
+<div class="beer-line incoming">
+
+    <span class="beer-name">
+        ${cerveja.nome}
+    </span>
+
+    <span class="beer-info">
+        ${cerveja.ibu} IBU •
+        ${cerveja.abv}
+    </span>
+
+    <div class="progress">
+
+        <div
+            class="progress-bar"
+            style="width:${cerveja.progresso}%">
+        </div>
+
+    </div>
+
+    <span class="status-coming">
+        ${cerveja.previsao}
+    </span>
+
+</div>
+
+`;
+
+});
+
+
+
+
+
+function reservar(indice){
+
+    const cerveja = cervejas[indice];
+
+    sessionStorage.setItem(
+        "cervejaSelecionada",
+        indice
+    );
+
+    window.location.href = "pedido.html";
+
+}
+
+
+</script>
+
+
+</body>
+</html>
