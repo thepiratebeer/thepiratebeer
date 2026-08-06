@@ -10,7 +10,7 @@ const incoming = [
 
 
 {
-    nome: "Czech Premium Pale Lager",
+    nome: "Czech Premium",
     ibu: "36",
     abv: "5,4%",
     previsao: "Brassagem",
