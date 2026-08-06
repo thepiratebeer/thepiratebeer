@@ -1,5 +1,5 @@
 const incoming = [
-
+/*
 {
     nome: "Rauchbier (Defumada)",
     ibu: "15",
@@ -7,7 +7,7 @@ const incoming = [
     previsao: "Carbonatação",
     progresso: 90
 },
-
+*/
 {
     nome: "American Hop Lager",
     ibu: "27",
