@@ -1,9 +1,9 @@
 const incoming = [
 
 {
-    nome: "American Hop Lager",
-    ibu: "27",
-    abv: "4,5%",
+    nome: "RED IPA",
+    ibu: "40",
+    abv: "5,5%",
     previsao: "Fermentando",
     progresso: 30
 },
