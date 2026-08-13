@@ -10,12 +10,12 @@ const cervejas = [
 */
 
 {
-    nome: "🟣 Scotish Export",
-    ibu: 17,
-    abv: "6.8%",
-    estoque: 3,
-    preco: 24,
-    descricao: "Scottish Export de corpo médio, rica em malte, com notas de caramelo, toffee e leve tostado. Um discreto toque defumado proveniente do malte Peat Smoked complementa o conjunto sem dominar o sabor. Amargor moderado, final limpo e excelente equilíbrio entre dulçor e secura."
+    nome: "🟢 Red IPA",
+    ibu: 40,
+    abv: "5.5%",
+    estoque: 25,
+    preco: 20,
+    descricao: "Boa, segundo a Bruna"
 },
 
 {
