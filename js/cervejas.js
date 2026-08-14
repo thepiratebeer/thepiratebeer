@@ -15,7 +15,7 @@ const cervejas = [
     abv: "5.5%",
     estoque: 25,
     preco: 20,
-    descricao: "Boa, segundo a Bruna"
+    descricao: "Red IPA de corpo médio, que combina o perfil maltado de caramelo e tosta com o aroma vívido de lúpulos cítricos e resinosos. Amargor marcante e final seco, com excelente equilíbrio entre malte e lúpulo.",
 },
 
 {
