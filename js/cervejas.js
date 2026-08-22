@@ -15,7 +15,7 @@ const cervejas = [
     abv: "5.5%",
     estoque: 7,
     preco: 20,
-    descricao: "Boa, segundo a Bruna"
+    descricao: "Red IPA de corpo médio, que combina o perfil maltado de caramelo e tosta com o aroma vívido de lúpulos cítricos e resinosos. Amargor marcante e final seco, com excelente equilíbrio entre malte e lúpulo.",
 },
 
 {
@@ -24,6 +24,7 @@ const cervejas = [
     abv: "4,6%",
     preco: 20,
     estoque: 10,
+    estoque: 13,
     descricao: "Cerveja defumada de corpo médio e alta drinkability, combinando a base limpa de malte Pilsen com notas marcantes de madeira, bacon e leve carvão provenientes do malte defumado. O amargor é moderado, equilibrando a doçura do malte sem roubar o protagonismo da fumaça. Final seco, limpo e persistente, com caráter defumado elegante que convida ao próximo gole."
 }
 /*
