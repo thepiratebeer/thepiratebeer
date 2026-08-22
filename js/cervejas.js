@@ -24,7 +24,7 @@ const cervejas = [
     abv: "4,6%",
     preco: 20,
     estoque: 10,
-    estoque: 13,
+    estoque: 10,
     descricao: "Cerveja defumada de corpo médio e alta drinkability, combinando a base limpa de malte Pilsen com notas marcantes de madeira, bacon e leve carvão provenientes do malte defumado. O amargor é moderado, equilibrando a doçura do malte sem roubar o protagonismo da fumaça. Final seco, limpo e persistente, com caráter defumado elegante que convida ao próximo gole."
 }
 /*
