@@ -10,12 +10,12 @@ const cervejas = [
 */
 
 {
-    nome: "🟢 Red IPA",
-    ibu: 40,
-    abv: "5.5%",
-    estoque: 7,
-    preco: 20,
-    descricao: "Red IPA de corpo médio, que combina o perfil maltado de caramelo e tosta com o aroma vívido de lúpulos cítricos e resinosos. Amargor marcante e final seco, com excelente equilíbrio entre malte e lúpulo.",
+    nome: "⚫ Czech Premium",
+    ibu: 36,
+    abv: "5.4%",
+    estoque: 52,
+    preco: 18,
+    descricao: "Czech Premium Pale Lager de corpo leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e levemente frutado do lúpulo Sladek. Amargor refinado e final limpo, com excelente refrescância e drinkability.",
 },
 
 {
@@ -23,8 +23,7 @@ const cervejas = [
     ibu: 15,
     abv: "4,6%",
     preco: 20,
-    estoque: 10,
-    estoque: 10,
+    estoque: 0,
     descricao: "Cerveja defumada de corpo médio e alta drinkability, combinando a base limpa de malte Pilsen com notas marcantes de madeira, bacon e leve carvão provenientes do malte defumado. O amargor é moderado, equilibrando a doçura do malte sem roubar o protagonismo da fumaça. Final seco, limpo e persistente, com caráter defumado elegante que convida ao próximo gole."
 }
 /*
