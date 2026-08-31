@@ -10,11 +10,11 @@ const incoming = [
 */
 
 {
-    nome: "Dark Lager",
-    ibu: "28",
-    abv: "4,7%",
-    previsao: "Fermentando",
-    progresso: 25
+    nome: "Black IPA",
+    ibu: "44",
+    abv: "5,7%",
+    previsao: "Produção",
+    progresso: 10
 },
 
 
