@@ -19,7 +19,7 @@ const cervejas = [
 },
 
 {
-    nome: "🟠 Czech Dark Lager",
+    nome: "🟠 Dark Lager",
     ibu: 28,
     abv: "4,7%",
     preco: 18,
