@@ -145,36 +145,31 @@
 <script src="js/cervejas.js"></script>
 <script src="js/pedido.js"></script>
 
-<!-- TOCA A MÚSICA ASSIM QUE ENTRA NA PÁGINA DE PEDIDO -->
-<script>
-window.addEventListener("DOMContentLoaded", () => {
-    // Aponta para a pasta audio/musica.mid
-    const musicaPedido = new Audio('audio/carry On.mp3');
-    
-    // Toca do início até o final
-    musicaPedido.play().catch(error => {
-        console.log("O navegador bloqueou a reprodução automática sem interação prévia.");
-    });
-});
-</script>
 
 <script>
-const musicaPedido = new Audio('audio/musica.mp3');
+// Usa caminho relativo simples para evitar bloqueio de CORS
+const musicaPedido = new Audio('audio/carry.mp3');
+musicaPedido.preload = 'auto'; // Força o celular a baixar o som na memória assim que abre
 
-// Função para iniciar o som no primeiro toque do usuário na tela
-function desbloquearEPlay() {
-    musicaPedido.play().then(() => {
-        // Remove os ouvintes para não reiniciar o som em outros toques
-        document.removeEventListener('click', desbloquearEPlay);
-        document.removeEventListener('touchstart', desbloquearEPlay);
-    }).catch(e => console.log("Aguardando interação..."));
+let somJaIniciou = false;
+
+function tocarAudioCelular() {
+    if (!somJaIniciou) {
+        musicaPedido.play().then(() => {
+            somJaIniciou = true;
+            // Remove os ouvintes para o som não reiniciar a cada toque na tela
+            document.removeEventListener('click', tocarAudioCelular);
+            document.removeEventListener('touchstart', tocarAudioCelular);
+        }).catch(err => {
+            console.log("Ainda aguardando permissão do sistema:", err);
+        });
+    }
 }
 
-// Escuta qualquer toque ou clique na página
-document.addEventListener('click', desbloquearEPlay);
-document.addEventListener('touchstart', desbloquearEPlay);
+// Ouve tanto o clique de mouse quanto o toque de dedo no celular
+document.addEventListener('click', tocarAudioCelular);
+document.addEventListener('touchstart', tocarAudioCelular);
 </script>
-
 
 
 </body>
