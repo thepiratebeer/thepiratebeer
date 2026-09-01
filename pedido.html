@@ -150,6 +150,8 @@
 // Usa caminho relativo simples para evitar bloqueio de CORS
 const musicaPedido = new Audio('audio/carry.mp3');
 musicaPedido.preload = 'auto'; // Força o celular a baixar o som na memória assim que abre
+// Define o volume (0.1 = 10%, 0.15 = 15%, 0.2 = 20% do volume total)
+musicaPedido.volume = 0.4;
 
 let somJaIniciou = false;
 
