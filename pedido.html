@@ -147,11 +147,9 @@
 
 
 <script>
-// Usa caminho relativo simples para evitar bloqueio de CORS
-const musicaPedido = new Audio('audio/carry.mp3');
-musicaPedido.preload = 'auto'; // Força o celular a baixar o som na memória assim que abre
-// Define o volume (0.1 = 10%, 0.15 = 15%, 0.2 = 20% do volume total)
-// musicaPedido.volume = 0.3;
+// Carrega o áudio
+const musicaPedido = new Audio('audio/carry.mp3?v=3');
+musicaPedido.preload = 'auto';
 
 let somJaIniciou = false;
 
@@ -159,20 +157,26 @@ function tocarAudioCelular() {
     if (!somJaIniciou) {
         musicaPedido.play().then(() => {
             somJaIniciou = true;
-            // Remove os ouvintes para o som não reiniciar a cada toque na tela
             document.removeEventListener('click', tocarAudioCelular);
             document.removeEventListener('touchstart', tocarAudioCelular);
         }).catch(err => {
-            console.log("Ainda aguardando permissão do sistema:", err);
+            console.log("Aguardando permissão do navegador:", err);
         });
     }
 }
 
-// Ouve tanto o clique de mouse quanto o toque de dedo no celular
 document.addEventListener('click', tocarAudioCelular);
 document.addEventListener('touchstart', tocarAudioCelular);
-</script>
 
+// PARA A MÚSICA QUANDO CLICAR NO BOTÃO DO WHATSAPP
+const btnWhatsapp = document.getElementById('whatsapp');
+if (btnWhatsapp) {
+    btnWhatsapp.addEventListener('click', () => {
+        musicaPedido.pause();
+        musicaPedido.currentTime = 0; // Reseta o som para o início
+    });
+}
+</script>
 
 </body>
 </html>
