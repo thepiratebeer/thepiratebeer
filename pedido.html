@@ -145,5 +145,18 @@
 <script src="js/cervejas.js"></script>
 <script src="js/pedido.js"></script>
 
+<!-- TOCA A MÚSICA ASSIM QUE ENTRA NA PÁGINA DE PEDIDO -->
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    // Aponta para a pasta audio/musica.mid
+    const musicaPedido = new Audio('audio/carry On.mp3');
+    
+    // Toca do início até o final
+    musicaPedido.play().catch(error => {
+        console.log("O navegador bloqueou a reprodução automática sem interação prévia.");
+    });
+});
+</script>
+
 </body>
 </html>
