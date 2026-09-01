@@ -158,5 +158,24 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+<script>
+const musicaPedido = new Audio('audio/musica.mp3');
+
+// Função para iniciar o som no primeiro toque do usuário na tela
+function desbloquearEPlay() {
+    musicaPedido.play().then(() => {
+        // Remove os ouvintes para não reiniciar o som em outros toques
+        document.removeEventListener('click', desbloquearEPlay);
+        document.removeEventListener('touchstart', desbloquearEPlay);
+    }).catch(e => console.log("Aguardando interação..."));
+}
+
+// Escuta qualquer toque ou clique na página
+document.addEventListener('click', desbloquearEPlay);
+document.addEventListener('touchstart', desbloquearEPlay);
+</script>
+
+
+
 </body>
 </html>
