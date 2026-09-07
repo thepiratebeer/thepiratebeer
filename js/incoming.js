@@ -13,8 +13,8 @@ const incoming = [
     nome: "Black IPA",
     ibu: "44",
     abv: "5,7%",
-    previsao: "Produção",
-    progresso: 10
+    previsao: "Cold Crash",
+    progresso: 70
 },
 
 
