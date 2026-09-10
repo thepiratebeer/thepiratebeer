@@ -10,12 +10,12 @@ const cervejas = [
 */
 
 {
-    nome: "⚫ Czech Premium",
-    ibu: 36,
-    abv: "5.4%",
-    estoque: 0,
-    preco: 18,
-    descricao: "Czech Premium Pale Lager de corpo leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e levemente frutado do lúpulo Sladek. Amargor refinado e final limpo, com excelente refrescância e drinkability.",
+    nome: "🟣 Am. Porter",
+    ibu: 46,
+    abv: "5.6%",
+    estoque: 50,
+    preco: 20,
+    descricao: "American Porter encorpada de cor escura profunda, trazendo notas marcantes de café, chocolate amargo e malte toscado. O amargor é firme e bem equilibrado pelo perfil de lúpulos americanos (Chinook e Sabro), que adicionam nuances resinosas, amadeiradas e um toque cítrico/frutado, entregando um final persistente e potente.",
 },
 
 {
