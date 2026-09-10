@@ -15,7 +15,7 @@ const cervejas = [
     abv: "5.6%",
     estoque: 50,
     preco: 20,
-    descricao: "American Porter encorpada de cor escura profunda, trazendo notas marcantes de café, chocolate amargo e malte toscado. O amargor é firme e bem equilibrado pelo perfil de lúpulos americanos (Chinook e Sabro), que adicionam nuances resinosas, amadeiradas e um toque cítrico/frutado, entregando um final persistente e potente.",
+    descricao: "American Porter encorpada de cor escura profunda, trazendo notas marcantes de café, chocolate amargo e malte tostado. O amargor é firme e bem equilibrado pelo perfil dos lúpulos Galaxy, Chinook e Sabro, que adicionam nuances resinosas, amadeiradas e um toque cítrico/frutado, entregando um final persistente e potente.",
 },
 
 {
