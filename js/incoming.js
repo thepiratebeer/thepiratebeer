@@ -1,5 +1,5 @@
 const incoming = [
-
+/*
 {
     nome: "Czech PPL",
     ibu: "40",
@@ -7,13 +7,13 @@ const incoming = [
     previsao: "Fermentando",
     progresso: 60
 },
-
+*/
 
 {
-    nome: "Session IPA",
-    ibu: "38",
+    nome: "Dark Lager",
+    ibu: "24",
     abv: "4,6%",
-    previsao: "Cozinha",
+    previsao: "Fermentando",
     progresso: 10
 },
 
