@@ -5,7 +5,7 @@ const cervejas = [
     ibu: 40,
     abv: "5.2%",
     preco: 18,
-    estoque: 16,
+    estoque: 10,
     descricao: "Czech Premium Pale Lager de corpo médio-leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e floral dos lúpulos saaz e sladek. Amargor equilibrado e final limpo, com excelente refrescância e drinkability.",
 },
 
@@ -24,7 +24,7 @@ const cervejas = [
     ibu: 50,
     abv: "5,6%",
     preco: 23,
-    estoque: 5,
+    estoque: 3,
     descricao: "Australian IPA de coloração dourada e visual levemente turbio, com amargor limpo e bem presente. O grande destaque fica por conta do dry hopping generoso do lúpulo australiano Galaxy combinado ao Ekuanot (Equinox), trazendo uma verdadeira explosão de aromas tropicais e cítricos — marcados por notas intensas de maracujá, pêssego e lima. Uma cerveja extremamente aromática, viva e com final seco que convida para o próximo gole."
 },
 
