@@ -5,7 +5,7 @@ const cervejas = [
     ibu: 40,
     abv: "5.2%",
     preco: 18,
-    estoque: 5,
+    estoque: 0,
     descricao: "Czech Premium Pale Lager de corpo médio-leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e floral dos lúpulos saaz e sladek. Amargor equilibrado e final limpo, com excelente refrescância e drinkability.",
 },
 
@@ -14,7 +14,7 @@ const cervejas = [
     nome: "🟣 Am. Porter",
     ibu: 46,
     abv: "5.6%",
-    estoque: 9,
+    estoque: 0,
     preco: 20,
     descricao: "American Porter encorpada de cor escura profunda, trazendo notas marcantes de café, chocolate amargo e malte tostado. O amargor é firme e bem equilibrado pelo perfil dos lúpulos Galaxy, Chinook e Sabro, que adicionam nuances resinosas, amadeiradas e um toque cítrico/frutado, entregando um final persistente e potente.",
 },
@@ -34,7 +34,7 @@ const cervejas = [
     ibu: 26,
     abv: "4,7%",
     preco: 18,
-    estoque: 48,
+    estoque: 18,
     descricao: "Czech Dark Lager de corpo médio, que combina o perfil suave de casca de pão com notas sutis de chocolate e café, sem adstringência. Amargor equilibrado e final limpo, com o aroma floral e herbal do lúpulo Sladek.",
 }
 
