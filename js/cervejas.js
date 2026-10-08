@@ -1,5 +1,5 @@
 const cervejas = [
-
+/*
 {
     nome: "⚫ Czech PPL",
     ibu: 40,
@@ -27,7 +27,7 @@ const cervejas = [
     estoque: 0,
     descricao: "Australian IPA de coloração dourada e visual levemente turbio, com amargor limpo e bem presente. O grande destaque fica por conta do dry hopping generoso do lúpulo australiano Galaxy combinado ao Ekuanot (Equinox), trazendo uma verdadeira explosão de aromas tropicais e cítricos — marcados por notas intensas de maracujá, pêssego e lima. Uma cerveja extremamente aromática, viva e com final seco que convida para o próximo gole."
 },
-
+*/
 
 {
     nome: "🟠 Dark Lager",
@@ -36,7 +36,7 @@ const cervejas = [
     preco: 18,
     estoque: 18,
     descricao: "Czech Dark Lager de corpo médio, que combina o perfil suave de casca de pão com notas sutis de chocolate e café, sem adstringência. Amargor equilibrado e final limpo, com o aroma floral e herbal do lúpulo Sladek.",
-}
+},
 
 
 

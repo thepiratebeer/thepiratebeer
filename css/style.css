@@ -270,7 +270,7 @@ footer p{
         0 0 6px rgba(255,255,255,.05);
 
     border-bottom:
-        1px solid rgba(255,255,255,.04);
+        4px solid rgba(138, 90, 75, 0.247);
 }
 
 .beer-line:nth-child(odd){
