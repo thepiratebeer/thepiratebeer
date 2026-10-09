@@ -14,7 +14,7 @@ const cervejas = [
     nome: "🟣 Session IPA",
     ibu: 36,
     abv: "4,4%",
-    estoque: 31,
+    estoque: 5,
     preco: 22,
     descricao: "Session IPA leve e altamente refrescante de coloração âmbar, trazendo amargor limpo e moderado. O destaque é a carga generosa do lúpulo Mosaic no boil e no dry hopping, entregando um perfil aromático vibrante marcado por frutas tropicais, cítricas e nuances florais. Com baixo teor alcoólico e corpo leve, é a cerveja perfeita para beber em quantidade mantendo todo o caráter e aroma de uma verdadeira IPA.",
 },
@@ -35,7 +35,7 @@ const cervejas = [
     ibu: 26,
     abv: "4,7%",
     preco: 18,
-    estoque: 11,
+    estoque: 9,
     descricao: "Czech Dark Lager de corpo médio, que combina o perfil suave de casca de pão com notas sutis de chocolate e café, sem adstringência. Amargor equilibrado e final limpo, com o aroma floral e herbal do lúpulo Sladek.",
 },
 
