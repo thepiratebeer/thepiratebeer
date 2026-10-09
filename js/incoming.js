@@ -5,18 +5,24 @@ const incoming = [
     ibu: "15",
     abv: "4,5",
     previsao: "Fermentação",
-    progresso: 30
+    progresso: 50
 },
 
 
 {
-    nome: "Session IPA",
-    ibu: "34",
-    abv: "4,4%",
-    previsao: "Envase",
-    progresso: 90
+    nome: "APA Citra",
+    ibu: "42",
+    abv: "5,5%",
+    previsao: "Produção",
+    progresso: 10
 },
 
-
+{
+    nome: "Czech PL",
+    ibu: "28",
+    abv: "4,7%",
+    previsao: "Produção",
+    progresso: 10
+},
 
 ];

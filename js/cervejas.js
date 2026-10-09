@@ -9,16 +9,17 @@ const cervejas = [
     descricao: "Czech Premium Pale Lager de corpo médio-leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e floral dos lúpulos saaz e sladek. Amargor equilibrado e final limpo, com excelente refrescância e drinkability.",
 },
 
-
+*/
 {
-    nome: "🟣 Am. Porter",
-    ibu: 46,
-    abv: "5.6%",
-    estoque: 0,
+    nome: "🟣 Session IPA",
+    ibu: 36,
+    abv: "4,4%",
+    estoque: 50,
     preco: 20,
-    descricao: "American Porter encorpada de cor escura profunda, trazendo notas marcantes de café, chocolate amargo e malte tostado. O amargor é firme e bem equilibrado pelo perfil dos lúpulos Galaxy, Chinook e Sabro, que adicionam nuances resinosas, amadeiradas e um toque cítrico/frutado, entregando um final persistente e potente.",
+    descricao: "Session IPA leve e altamente refrescante de coloração âmbar, trazendo amargor limpo e moderado. O destaque é a carga generosa do lúpulo Mosaic no boil e no dry hopping, entregando um perfil aromático vibrante marcado por frutas tropicais, cítricas e nuances florais. Com baixo teor alcoólico e corpo leve, é a cerveja perfeita para beber em quantidade mantendo todo o caráter e aroma de uma verdadeira IPA.",
 },
 
+/*
 {
     nome: "🟢 Aust. IPA",
     ibu: 50,
