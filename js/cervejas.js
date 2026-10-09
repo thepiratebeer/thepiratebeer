@@ -15,7 +15,7 @@ const cervejas = [
     ibu: 36,
     abv: "4,4%",
     estoque: 50,
-    preco: 20,
+    preco: 22,
     descricao: "Session IPA leve e altamente refrescante de coloração âmbar, trazendo amargor limpo e moderado. O destaque é a carga generosa do lúpulo Mosaic no boil e no dry hopping, entregando um perfil aromático vibrante marcado por frutas tropicais, cítricas e nuances florais. Com baixo teor alcoólico e corpo leve, é a cerveja perfeita para beber em quantidade mantendo todo o caráter e aroma de uma verdadeira IPA.",
 },
 
