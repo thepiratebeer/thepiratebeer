@@ -5,7 +5,7 @@ const incoming = [
     ibu: "15",
     abv: "4,5",
     previsao: "Fermentação",
-    progresso: 50
+    progresso: 70
 },
 
 
@@ -13,8 +13,8 @@ const incoming = [
     nome: "APA Citra",
     ibu: "42",
     abv: "5,5%",
-    previsao: "Produção",
-    progresso: 10
+    previsao: "Fermentação",
+    progresso: 20
 },
 
 {
