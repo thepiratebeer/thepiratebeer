@@ -35,7 +35,7 @@ const cervejas = [
     ibu: 26,
     abv: "4,7%",
     preco: 18,
-    estoque: 9,
+    estoque: 4,
     descricao: "Czech Dark Lager de corpo médio, que combina o perfil suave de casca de pão com notas sutis de chocolate e café, sem adstringência. Amargor equilibrado e final limpo, com o aroma floral e herbal do lúpulo Sladek.",
 },
 

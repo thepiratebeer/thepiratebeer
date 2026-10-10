@@ -4,8 +4,8 @@ const incoming = [
     nome: "American Light Lager",
     ibu: "15",
     abv: "4,5",
-    previsao: "Fermentação",
-    progresso: 70
+    previsao: "Clarificação",
+    progresso: 80
 },
 
 
@@ -14,7 +14,7 @@ const incoming = [
     ibu: "42",
     abv: "5,5%",
     previsao: "Fermentação",
-    progresso: 20
+    progresso: 30
 },
 
 {
