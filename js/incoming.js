@@ -21,8 +21,8 @@ const incoming = [
     nome: "Czech PL",
     ibu: "28",
     abv: "4,7%",
-    previsao: "Fermentação",
-    progresso: 30
+    previsao: "Clarificação",
+    progresso: 75
 },
 
 {

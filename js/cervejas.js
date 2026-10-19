@@ -34,7 +34,7 @@ const cervejas = [
     ibu: 16,
     abv: "4,5%",
     preco: 16,
-    estoque: 8,
+    estoque: 0,
     descricao: "American Lager extremamente leve, cristalina e refrescante, com perfil maltado suave complementado pelo toque sutil de milho não maltado. Amargor muito baixo e limpo proveniente do lúpulo Hallertau Magnum, garantindo um final seco, equilibrado e de altíssima drinkability. Ideal para consumir bem gelada em qualquer ocasião.",
 },
 
@@ -43,7 +43,7 @@ const cervejas = [
     ibu: 46,
     abv: "5,3%",
     preco: 22,
-    estoque: 23,
+    estoque: 16,
     descricao: "American Pale Ale de coloração dourada com destaques límpidos, amargor médio limpo e bem estruturado pelos lúpulos Warrior e Citra. O protagonismo fica por conta das adições tardias e do dry hopping generoso de Citra, que entregam uma explosão cítrica e tropical marcante (notas de toranja, lima e manga). É uma cerveja vibrante, extremamente aromática e de excelente drinkability.",
 },
 
