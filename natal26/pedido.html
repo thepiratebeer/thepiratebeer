@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Cerveja - The Pirate Beer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pedido.css">
+
+    <style>
+        /* Estilos da Intro de Vídeo Sexta-Feira 13 */
+        #video-intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000000;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #introVideo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Mantém a proporção do vídeo */
+        }
+
+        .skip-btn {
+            position: absolute;
+            bottom: 25px;
+            right: 20px;
+            background: rgba(225, 6, 0, 0.85);
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            padding: 10px 18px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            z-index: 10000;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        }
+
+        .skip-btn:hover {
+            background: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- OVERLAY DO VÍDEO SEXTA-FEIRA 13 -->
+<div id="video-intro-overlay">
+    <video id="introVideo" playsinline preload="auto">
+        <source src="video/sexta13.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+    </video>
+    <button id="skipVideoBtn" class="skip-btn">Pular Intro ➔</button>
+</div>
+
+<div class="pedido-container">
+
+    <a href="index.html" class="voltar">← Voltar</a>
+
+    <div class="pedido-card">
+
+        <h1 id="nomeCerveja">Carregando...</h1>
+
+        <div class="info">
+
+            <div>
+                <span>IBU</span>
+                <strong id="ibu">-</strong>
+            </div>
+
+            <div>
+                <span>ABV</span>
+                <strong id="abv">-</strong>
+            </div>
+
+            <div>
+                <span>Disponível</span>
+                <strong id="estoque">0</strong>
+            </div>
+
+        </div>
+
+
+<div class="descricao-estilo">
+    <h3>Sobre esta cerveja</h3>
+
+    <p id="descricaoCerveja"></p>
+</div>
+
+
+        <hr>
+
+        <label for="apelido">
+            Quem tá reservando?
+        </label>
+
+        <input
+            type="text"
+            id="apelido"
+            maxlength="40"
+            placeholder="Ex.: Dudu, Alemão, Marcelo da Oficina">
+
+        <label for="quantidade">
+            Quantas?
+        </label>
+
+        <div class="controle">
+
+            <button id="menos">−</button>
+
+            <input
+                id="quantidade"
+                type="number"
+                value="1"
+                min="1">
+
+            <button id="mais">+</button>
+
+        </div>
+
+        <div class="resumo">
+
+            <div>
+                <span>Valor unitário</span>
+                <strong id="valorUnitario">
+                    R$ 0,00
+                </strong>
+            </div>
+
+            <div>
+                <span>Total</span>
+                <strong id="valorTotal">
+                    R$ 0,00
+                </strong>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h2>PIX</h2>
+
+        <p>
+            Faça o pagamento utilizando a chave abaixo.
+        </p>
+            
+        <div class="pix-box">
+
+            <input
+                id="pix"
+                type="text"
+                readonly
+                value="71649000006">
+
+            <button id="copiarPix">
+                Copiar
+            </button>
+
+        </div>
+
+        <label class="check">
+
+            <input
+                type="checkbox"
+                id="confirmado">
+
+            Já fiz o PIX.
+
+        </label>
+
+        <button
+            id="whatsapp"
+            class="btn-reservar">
+
+            Enviar reserva pelo WhatsApp
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/cervejas.js"></script>
+<script src="js/pedido.js"></script>
+
+
+<script>
+// Elementos da Intro e Áudio
+const overlay = document.getElementById('video-intro-overlay');
+const video = document.getElementById('introVideo');
+const btnSkip = document.getElementById('skipVideoBtn');
+
+const musicaPedido = new Audio('audio/carry.mp3?v=3');
+musicaPedido.preload = 'auto';
+
+let videoFinalizado = false;
+
+// Função para encerrar o vídeo e entrar no formulário de pedidos
+function finalizarIntro() {
+    if (videoFinalizado) return;
+    videoFinalizado = true;
+
+    // Pausa o vídeo e esconde a overlay
+    video.pause();
+    overlay.style.display = 'none';
+
+    // Inicia a música tema da página
+    musicaPedido.play().catch(err => {
+        console.log("Aguardando permissão de som no navegador:", err);
+    });
+}
+
+// Quando o vídeo terminar de rodar, entra automaticamente nos pedidos
+video.addEventListener('ended', finalizarIntro);
+
+// Clique no botão "Pular Intro"
+btnSkip.addEventListener('click', (e) => {
+    e.stopPropagation();
+    finalizarIntro();
+});
+
+// Autoplay com fallback por conta de restrições de áudio dos navegadores em celulares
+document.addEventListener('DOMContentLoaded', () => {
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
+            // Se o navegador bloquear o autoplay com som, escuta qualquer primeiro toque na tela para dar o play no vídeo
+            const iniciarNoToque = () => {
+                if (!videoFinalizado) {
+                    video.play();
+                }
+                document.removeEventListener('click', iniciarNoToque);
+                document.removeEventListener('touchstart', iniciarNoToque);
+            };
+            document.addEventListener('click', iniciarNoToque);
+            document.addEventListener('touchstart', iniciarNoToque);
+        });
+    }
+});
+
+// Parar a música ao clicar no botão do WhatsApp
+const btnWhatsapp = document.getElementById('whatsapp');
+if (btnWhatsapp) {
+    btnWhatsapp.addEventListener('click', () => {
+        musicaPedido.pause();
+        musicaPedido.currentTime = 0;
+    });
+}
+</script>
+
+</body>
+</html>
