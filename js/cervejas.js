@@ -28,7 +28,7 @@ const cervejas = [
     estoque: 0,
     descricao: "Australian IPA de coloração dourada e visual levemente turbio, com amargor limpo e bem presente. O grande destaque fica por conta do dry hopping generoso do lúpulo australiano Galaxy combinado ao Ekuanot (Equinox), trazendo uma verdadeira explosão de aromas tropicais e cítricos — marcados por notas intensas de maracujá, pêssego e lima. Uma cerveja extremamente aromática, viva e com final seco que convida para o próximo gole."
 },
-*/
+
 {
     nome: "⚫ Amer. Lager",
     ibu: 16,
@@ -37,7 +37,7 @@ const cervejas = [
     estoque: 0,
     descricao: "American Lager extremamente leve, cristalina e refrescante, com perfil maltado suave complementado pelo toque sutil de milho não maltado. Amargor muito baixo e limpo proveniente do lúpulo Hallertau Magnum, garantindo um final seco, equilibrado e de altíssima drinkability. Ideal para consumir bem gelada em qualquer ocasião.",
 },
-
+*/
 {
     nome: "🟡 APA Citra",
     ibu: 46,
@@ -46,7 +46,7 @@ const cervejas = [
     estoque: 16,
     descricao: "American Pale Ale de coloração dourada com destaques límpidos, amargor médio limpo e bem estruturado pelos lúpulos Warrior e Citra. O protagonismo fica por conta das adições tardias e do dry hopping generoso de Citra, que entregam uma explosão cítrica e tropical marcante (notas de toranja, lima e manga). É uma cerveja vibrante, extremamente aromática e de excelente drinkability.",
 },
-
+/*
 {
     nome: "🟠 Dark Lager",
     ibu: 26,
@@ -55,7 +55,7 @@ const cervejas = [
     estoque: 0,
     descricao: "Czech Dark Lager de corpo médio, que combina o perfil suave de casca de pão com notas sutis de chocolate e café, sem adstringência. Amargor equilibrado e final limpo, com o aroma floral e herbal do lúpulo Sladek.",
 },
-
+*/
 
 
 /* 🟡 ⚫ 🔴 🟣 🟢 🔵 ⚪ 🟠 */
