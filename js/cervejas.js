@@ -1,14 +1,14 @@
 const cervejas = [
-/*
+
 {
     nome: "⚫ Czech PPL",
-    ibu: 40,
+    ibu: 37,
     abv: "5.2%",
     preco: 18,
-    estoque: 0,
+    estoque: 50,
     descricao: "Czech Premium Pale Lager de corpo médio-leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e floral dos lúpulos saaz e sladek. Amargor equilibrado e final limpo, com excelente refrescância e drinkability.",
 },
-
+/*
 
 {
     nome: "🟣 Session IPA",
