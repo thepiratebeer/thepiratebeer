@@ -5,7 +5,7 @@ const cervejas = [
     ibu: 37,
     abv: "5.2%",
     preco: 18,
-    estoque: 31,
+    estoque: 22,
     descricao: "Czech Premium Pale Lager de corpo médio-leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e floral dos lúpulos saaz e sladek. Amargor equilibrado e final limpo, com excelente refrescância e drinkability.",
 },
 /*
@@ -43,7 +43,7 @@ const cervejas = [
     ibu: 46,
     abv: "5,3%",
     preco: 22,
-    estoque: 12,
+    estoque: 8,
     descricao: "American Pale Ale de coloração dourada com destaques límpidos, amargor médio limpo e bem estruturado pelos lúpulos Warrior e Citra. O protagonismo fica por conta das adições tardias e do dry hopping generoso de Citra, que entregam uma explosão cítrica e tropical marcante (notas de toranja, lima e manga). É uma cerveja vibrante, extremamente aromática e de excelente drinkability.",
 },
 /*
