@@ -8,62 +8,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pedido.css">
-
-    <style>
-        /* Estilos da Intro de Vídeo Sexta-Feira 13 */
-        #video-intro-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: #000000;
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        #introVideo {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Mantém a proporção do vídeo */
-        }
-
-        .skip-btn {
-            position: absolute;
-            bottom: 25px;
-            right: 20px;
-            background: rgba(225, 6, 0, 0.85);
-            color: #ffffff;
-            border: 2px solid #ffffff;
-            padding: 10px 18px;
-            font-size: 14px;
-            font-weight: bold;
-            border-radius: 25px;
-            cursor: pointer;
-            z-index: 10000;
-            text-transform: uppercase;
-            box-shadow: 0 0 10px rgba(0,0,0,0.8);
-        }
-
-        .skip-btn:hover {
-            background: #ff0000;
-        }
-    </style>
 </head>
 
 <body>
-
-<!-- OVERLAY DO VÍDEO SEXTA-FEIRA 13 -->
-<div id="video-intro-overlay">
-    <video id="introVideo" playsinline preload="auto">
-        <source src="video/sexta13.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos HTML5.
-    </video>
-    <button id="skipVideoBtn" class="skip-btn">Pular Intro ➔</button>
-</div>
 
 <div class="pedido-container">
 
@@ -98,6 +45,9 @@
 
     <p id="descricaoCerveja"></p>
 </div>
+
+
+
 
 
         <hr>
@@ -197,65 +147,33 @@
 
 
 <script>
-// Elementos da Intro e Áudio
-const overlay = document.getElementById('video-intro-overlay');
-const video = document.getElementById('introVideo');
-const btnSkip = document.getElementById('skipVideoBtn');
-
+// Carrega o áudio
 const musicaPedido = new Audio('audio/carry.mp3?v=3');
 musicaPedido.preload = 'auto';
 
-let videoFinalizado = false;
+let somJaIniciou = false;
 
-// Função para encerrar o vídeo e entrar no formulário de pedidos
-function finalizarIntro() {
-    if (videoFinalizado) return;
-    videoFinalizado = true;
-
-    // Pausa o vídeo e esconde a overlay
-    video.pause();
-    overlay.style.display = 'none';
-
-    // Inicia a música tema da página
-    musicaPedido.play().catch(err => {
-        console.log("Aguardando permissão de som no navegador:", err);
-    });
-}
-
-// Quando o vídeo terminar de rodar, entra automaticamente nos pedidos
-video.addEventListener('ended', finalizarIntro);
-
-// Clique no botão "Pular Intro"
-btnSkip.addEventListener('click', (e) => {
-    e.stopPropagation();
-    finalizarIntro();
-});
-
-// Autoplay com fallback por conta de restrições de áudio dos navegadores em celulares
-document.addEventListener('DOMContentLoaded', () => {
-    const playPromise = video.play();
-    if (playPromise !== undefined) {
-        playPromise.catch(() => {
-            // Se o navegador bloquear o autoplay com som, escuta qualquer primeiro toque na tela para dar o play no vídeo
-            const iniciarNoToque = () => {
-                if (!videoFinalizado) {
-                    video.play();
-                }
-                document.removeEventListener('click', iniciarNoToque);
-                document.removeEventListener('touchstart', iniciarNoToque);
-            };
-            document.addEventListener('click', iniciarNoToque);
-            document.addEventListener('touchstart', iniciarNoToque);
+function tocarAudioCelular() {
+    if (!somJaIniciou) {
+        musicaPedido.play().then(() => {
+            somJaIniciou = true;
+            document.removeEventListener('click', tocarAudioCelular);
+            document.removeEventListener('touchstart', tocarAudioCelular);
+        }).catch(err => {
+            console.log("Aguardando permissão do navegador:", err);
         });
     }
-});
+}
 
-// Parar a música ao clicar no botão do WhatsApp
+document.addEventListener('click', tocarAudioCelular);
+document.addEventListener('touchstart', tocarAudioCelular);
+
+// PARA A MÚSICA QUANDO CLICAR NO BOTÃO DO WHATSAPP
 const btnWhatsapp = document.getElementById('whatsapp');
 if (btnWhatsapp) {
     btnWhatsapp.addEventListener('click', () => {
         musicaPedido.pause();
-        musicaPedido.currentTime = 0;
+        musicaPedido.currentTime = 0; // Reseta o som para o início
     });
 }
 </script>

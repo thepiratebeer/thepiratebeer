@@ -4,8 +4,8 @@ const incoming = [
     nome: "American Light Lager",
     ibu: "15",
     abv: "4,5",
-    previsao: "Produção",
-    progresso: 10
+    previsao: "Envase",
+    progresso: 90
 },
 
 /*
@@ -26,11 +26,11 @@ const incoming = [
 },
 */
 {
-    nome: "English IPA",
-    ibu: "44",
-    abv: "5,4%",
-    previsao: "Cold Crash",
-    progresso: 60
+    nome: "American IPA",
+    ibu: "50",
+    abv: "5,7%",
+    previsao: "Prdução",
+    progresso: 10
 },
 
 ];
