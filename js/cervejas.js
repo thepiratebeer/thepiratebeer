@@ -5,7 +5,7 @@ const cervejas = [
     ibu: 37,
     abv: "5.2%",
     preco: 18,
-    estoque: 12,
+    estoque: 2,
     descricao: "Czech Premium Pale Lager de corpo médio-leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e floral dos lúpulos saaz e sladek. Amargor equilibrado e final limpo, com excelente refrescância e drinkability.",
 },
 
