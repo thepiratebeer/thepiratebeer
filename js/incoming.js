@@ -1,11 +1,11 @@
 const incoming = [
 
 {
-    nome: "American Light Lager",
-    ibu: "15",
-    abv: "4,5",
-    previsao: "Envase",
-    progresso: 90
+    nome: "Dark Lager",
+    ibu: "18",
+    abv: "4,6",
+    previsao: "Fermentando",
+    progresso: 10
 },
 
 /*
@@ -28,9 +28,9 @@ const incoming = [
 {
     nome: "American IPA",
     ibu: "50",
-    abv: "5,7%",
-    previsao: "Prdução",
-    progresso: 10
+    abv: "5,7",
+    previsao: "Dry Hop",
+    progresso: 75
 },
 
 ];
