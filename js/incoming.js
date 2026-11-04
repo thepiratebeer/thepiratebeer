@@ -5,7 +5,7 @@ const incoming = [
     ibu: "18",
     abv: "4,6",
     previsao: "Fermentando",
-    progresso: 10
+    progresso: 50
 },
 
 /*
@@ -26,11 +26,11 @@ const incoming = [
 },
 */
 {
-    nome: "American IPA",
-    ibu: "50",
-    abv: "5,7",
-    previsao: "Dry Hop",
-    progresso: 75
+    nome: "Monster Ale",
+    ibu: "???",
+    abv: "???",
+    previsao: "Indo pra panela",
+    progresso: 10
 },
 
 ];
