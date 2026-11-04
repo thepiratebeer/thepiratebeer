@@ -5,7 +5,7 @@ const cervejas = [
     ibu: 37,
     abv: "5.2%",
     preco: 18,
-    estoque: 10,
+    estoque: 3,
     descricao: "Czech Premium Pale Lager de corpo médio-leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e floral dos lúpulos saaz e sladek. Amargor equilibrado e final limpo, com excelente refrescância e drinkability.",
 },
 
@@ -14,7 +14,7 @@ const cervejas = [
     ibu: 43,
     abv: "5.4%",
     preco: 20,
-    estoque: 30,
+    estoque: 17,
     descricao: "English IPA clássica de coloração âmbar, com perfil maltado marcante que remete a caramelo, pão e biscoito. O amargor é firme e limpo, garantido pelo lúpulo Warrior e equilibrado por adições generosas do tradicional East Kent Goldings (EKG), que trazem aromas florais, terrosos e levemente condimentados. Fermentada com levedura SafAle S-04, entrega um final seco, equilibrado e com o autêntico caráter britânico.",
 },
 
@@ -44,7 +44,7 @@ const cervejas = [
     ibu: 17,
     abv: "4,5%",
     preco: 16,
-    estoque: 50,
+    estoque: 15,
     descricao: "American Lager extremamente leve, cristalina e refrescante, com perfil maltado suave complementado pelo toque sutil de milho não maltado. Amargor muito baixo e limpo proveniente do lúpulo Hallertau Magnum, garantindo um final seco, equilibrado e de altíssima drinkability. Ideal para consumir bem gelada em qualquer ocasião.",
 },
 /*
