@@ -44,7 +44,7 @@ const cervejas = [
     ibu: 17,
     abv: "4,5%",
     preco: 16,
-    estoque: 9,
+    estoque: 5,
     descricao: "American Lager extremamente leve, cristalina e refrescante, com perfil maltado suave complementado pelo toque sutil de milho não maltado. Amargor muito baixo e limpo proveniente do lúpulo Hallertau Magnum, garantindo um final seco, equilibrado e de altíssima drinkability. Ideal para consumir bem gelada em qualquer ocasião.",
 },
 /*
