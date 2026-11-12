@@ -1,5 +1,5 @@
 const incoming = [
-
+/*
 {
     nome: "Dark Lager",
     ibu: "18",
@@ -8,28 +8,28 @@ const incoming = [
     progresso: 50
 },
 
-/*
+*/
 {
-    nome: "APA Citra",
-    ibu: "42",
-    abv: "5,5%",
-    previsao: "Fermentação",
-    progresso: 30
+    nome: "Session IPA",
+    ibu: "37",
+    abv: "4,5%",
+    previsao: "Produção",
+    progresso: 20
 },
 
 {
-    nome: "Czech PL",
+    nome: "Czech Premiun",
     ibu: "28",
     abv: "4,7%",
-    previsao: "Clarificação",
-    progresso: 75
+    previsao: "Envase",
+    progresso: 90
 },
-*/
+
 {
     nome: "Monster Ale",
     ibu: "???",
     abv: "???",
-    previsao: "Indo pra panela",
+    previsao: "Esperando levedura",
     progresso: 10
 },
 
