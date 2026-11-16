@@ -1,14 +1,14 @@
 const cervejas = [
-/*
+
 {
     nome: "⚫ Czech PPL",
-    ibu: 37,
-    abv: "5.2%",
+    ibu: 41,
+    abv: "5.4%",
     preco: 18,
-    estoque: 3,
+    estoque: 45,
     descricao: "Czech Premium Pale Lager de corpo médio-leve, que combina o perfil maltado de pão e biscoito com o aroma herbal e floral dos lúpulos saaz e sladek. Amargor equilibrado e final limpo, com excelente refrescância e drinkability.",
 },
-
+/*
 {
     nome: "🟣 English IPA",
     ibu: 43,
@@ -35,7 +35,7 @@ const cervejas = [
     ibu: 50,
     abv: "5,8%",
     preco: 23,
-    estoque: 14,
+    estoque: 6,
     descricao: "American IPA clara e visual levemente turbio, com amargor limpo e bem presente. O grande destaque fica por conta do dry hopping do lúpulo americano Simcoe combinado ao Lúpulo Amarillo, trazendo uma verdadeira explosão de aromas tropicais e cítricos. Uma American IPA clássica: Amarga, extremamente aromática, viva e com final seco."
 },
 /*
@@ -62,7 +62,7 @@ const cervejas = [
     ibu: 26,
     abv: "4,7%",
     preco: 18,
-    estoque: 50,
+    estoque: 27,
     descricao: "Czech Dark Lager de corpo médio, que combina o perfil suave de casca de pão com notas sutis de chocolate e café, sem adstringência. Amargor equilibrado e final limpo, com o aroma floral e herbal do lúpulo Sladek.",
 },
 

@@ -13,10 +13,10 @@ const incoming = [
     nome: "Session IPA",
     ibu: "37",
     abv: "4,5%",
-    previsao: "Produção",
-    progresso: 20
+    previsao: "Dry Hop",
+    progresso: 60
 },
-
+/*
 {
     nome: "Czech Premiun",
     ibu: "28",
@@ -24,7 +24,7 @@ const incoming = [
     previsao: "Envase",
     progresso: 90
 },
-
+*/
 {
     nome: "Monster Ale",
     ibu: "???",
